@@ -7,6 +7,7 @@
       '../../skia/skia.gyp:skia',
       '../build/system.gyp:tizen_sensor',
       '../build/system.gyp:tizen_vibration',
+      '../build/system.gyp:tizen_speech',
     ],
     'include_dirs': [
       '../..',
@@ -20,6 +21,8 @@
       'mobile/sensor/tizen_platform_sensor.h',
       'browser/vibration/vibration_provider_tizen.cc',
       'browser/vibration/vibration_provider_tizen.h',
+      'browser/speech/tts_tizen.cc',
+      'browser/speech/tts_tizen.h',
     ],
     'conditions': [
       [ 'tizen_mobile == 1', {
